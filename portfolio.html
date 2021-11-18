@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -12,19 +15,19 @@
         <a href="./index.html">WebStudio</a>
         <nav>
             <ul>
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a class="studio-link" href="./index.html">Студия</a></li>
+                <li><a class="portfolio-link" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="contacts-link" href="">Контакты</a></li>
             </ul>
         </nav>
         <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
     <main>
         <h1 hidden>Портфолио Веб Студии</h1>
-<!-- Кнопки перехода по видам работ -->
+        <!-- Фильтр по видам работ -->
         <section>
             <h2 hidden>Кнопки</h2>
             <ul>
@@ -40,47 +43,47 @@
             <h2 hidden>Наши работы</h2>
             <ul>
                 <li>
-                    <img src="./images/site-first.jpg" alt="Монитор ноутбука с портретными фотографиями троих людей">
+                    <img src="./images/site-first.jpg" alt="Монитор ноутбука с портретными фотографиями троих людей" width="370">
                     <h3>Технокряк</h3>
                     <p>Веб-сайт</p>
                 </li>
                 <li>
-                    <img src="./images/design-second.jpg" alt="Два баскетболиста борются за мяч">
+                    <img src="./images/design-second.jpg" alt="Два баскетболиста борются за мяч" width="370">
                     <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
                     <p>Дизайн</p>
                 </li>
                 <li>
-                    <img src="./images/application-third.jpg" alt="Логотип рыбного ресторана с рыбой на нем">
+                    <img src="./images/application-third.jpg" alt="Логотип рыбного ресторана с рыбой на нем" width="370">
                     <h3>Ресторан <span lang="en">Seafood</span></h3>
                     <p>Приложение</p>
                 </li>
                 <li>
-                    <img src="./images/marketing-forth.jpg" alt="Черные накладные беспроводные наушники">
+                    <img src="./images/marketing-forth.jpg" alt="Черные накладные беспроводные наушники" width="370">
                     <h3>Проект <span lang="en">Prime</span></h3>
                     <p>Маркетинг</p>
                 </li>
                 <li>
-                    <img src="./images/application-fifth.jpg" alt="Две коробочки перпендикулярно одна к другой">
+                    <img src="./images/application-fifth.jpg" alt="Две коробочки перпендикулярно одна к другой" width="370">
                     <h3>Проект <span lang="en">Boxes</span></h3>
                     <p>Приложение</p>
                 </li>
                 <li>
-                    <img src="./images/site-sixth.jpg" alt="Экран монитора с надписами и очертаниями карты мира на черном фоне">
+                    <img src="./images/site-sixth.jpg" alt="Экран монитора с надписами и очертаниями карты мира на черном фоне" width="370">
                     <h3 lang="en">Inspiration has no Borders</h3>
                     <p>Веб-сайт</p>
                 </li>
                 <li>
-                    <img src="./images/design-seventh.jpg" alt="Розворот страниц женского журнала">
+                    <img src="./images/design-seventh.jpg" alt="Розворот страниц женского журнала" width="370">
                     <h3>Издание <span lang="en">Limited Edition</span></h3>
                     <p>Дизайн</p>
                 </li>
                 <li>
-                    <img src="./images/marketing-eighth.jpg" alt="Белая бирка с надписью на шнурке">
+                    <img src="./images/marketing-eighth.jpg" alt="Белая бирка с надписью на шнурке" width="370">
                     <h3>Проект <span lang="en">LAB</span></h3>
                     <p>Маркетинг</p>
                 </li>
                 <li>
-                    <img src="./images/application-ninth.jpg" alt="Руки на клавиатуре ноутбука за робочим столом">
+                    <img src="./images/application-ninth.jpg" alt="Руки на клавиатуре ноутбука за робочим столом" width="370">
                     <h3 lang="en">Growing Business</h3>
                     <p>Приложение</p>
                 </li>
@@ -91,10 +94,11 @@
         <a href="./index.html">WebStudio</a>
         <address>
             <ul>
-                <li><a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4261796,30.5349691,16.36z/data=!4m13!1m7!3m6!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!3b1!8m2!3d50.4265807!4d30.5383858!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru"
+                <li><a class="location"
+                        href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4261796,30.5349691,16.36z/data=!4m13!1m7!3m6!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!3b1!8m2!3d50.4265807!4d30.5383858!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru"
                         target="_blank">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li><a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </address>
     </footer>

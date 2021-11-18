@@ -1,0 +1,29 @@
+/* подключение основного и альтернативного шрифтов страницы */
+body {
+    font-family: roboto, sans-serif;
+    color: #212121;
+}
+
+/* объявление переменных стелей страницы */
+:root {
+    --text-color-blue: #2196F3;
+    --text-color-grey: #757575;
+    --background-color-light: #E5E5E5;
+    --background-color-dark: #F5F4FA;
+  }
+
+/* ховер и фокус на ссылки хедера и футера */
+.studio-link:hover,
+.studio-link:focus,
+.portfolio-link:hover,
+.portfolio-link:focus,
+.contacts-link:hover,   
+.contacts-link:focus,
+.email:focus,
+.email:hover,
+.tel:focus,
+.tel:hover,
+.location:hover,
+.location:focus {
+    color: var(--text-color-blue);
+}
