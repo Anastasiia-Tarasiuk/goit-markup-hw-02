@@ -11,29 +11,29 @@
 
 /* Подключение основного и альтернативного шрифтов, цвета текста */
 body {
-    font-family: roboto, sans-serif;
     color: var(--color-grey);
+    background-color: var(--color-white);
+
+    font-family: Roboto, "Open Sans", "FF DIN", sans-serif;
 }
 
 /* СТУДИЯ */
 
-/* Основной цвет фона */
-.bgc {
-    background-color: var(--color-white);
-}
-
 /* Стилизация лого */
 .logo {
     font-family: Raleway;
-    /* font-style: normal; */
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+
+.header .logo {
     color: var(--color-logo);
 }
 
-.logo-web {
+.header .web, 
+.footer .web {
     color: var(--color-blue);
 }
 
@@ -45,12 +45,11 @@ body {
 /* Значение по умолчанию для всех ссылок */
 .link {
     text-decoration: none;
-    font-style: normal;    
 }
 
 /* Стилизация навигации */
 .nav > .link, 
-.auth > .link {
+.contacts > .link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -61,17 +60,17 @@ body {
     color: var(--color-black);
 }
 
-.auth .link {
+.contacts .link {
     color: var(--color-grey);
 }
 
-/* Ховер и фокус на ссылки хедера */
-.studio:hover,
-.studio:focus,
-.portfolio:hover,
-.portfolio:focus,
-.contacts:hover,   
-.contacts:focus {
+/* Ховер и фокус на ссылки хедера и футера */
+.nav .link:hover,
+.nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus,
+.contact-us .link:hover,
+.contact-us .link:focus {
     color: var(--color-blue);
 }
 
@@ -80,9 +79,9 @@ body {
     background-color: var(--footer-color);
 }
 
-.hero-title {
+.hero .title {
     color: var(--color-white);
-    /* font-style: normal; */
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -94,21 +93,26 @@ body {
 .button {
     background-color: var(--color-blue);
     color: var(--color-white);
-    /* font-style: normal; */
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
 }
 
+.hero .button:hover,
+.hero .button:focus {
+    background-color: #188CE8;
+}
+
 /* Преимущества */
-.benefit-title {
+.benefits .title {
     color: var(--color-black);
-    /* font-style: normal; */
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -116,19 +120,18 @@ body {
     text-transform: uppercase;
 }
 
-.benefit-text {
-    /* font-style: normal;
-    font-weight: normal; */
+.benefits .text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
 /* Чем мы занимаемся */
-.title {
+.work .title,
+.team .title {
     color: var(--color-black);
+
     font-family: Roboto;
-    /* font-style: normal; */
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -150,53 +153,61 @@ body {
 
 .member {
     color: var(--color-black);
+
     font-weight: 500;
 }
-
-/* .position {
-    font-weight: normal;
-} */
 
 /* Футер */
 .footer {
     background-color: var(--footer-color);
 }
 
+.footer .logo {
+    color: var(--color-white);
+}
+
 .contact-us .link {
     color: var(--color-white);
-    /* font-style: normal; */
+
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-/* Ховер и фокус на ссылки для футера */
-.email:focus,
-.email:hover,
-.tel:focus,
-.tel:hover,
-.location:hover,
-.location:focus {
-    color: var(--color-blue);
+/* Прозрачность элементов футера */
+.contact-us .mail,
+.contact-us .tel { 
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* ПОРТФОЛИО */
 
-/* Main */
-.portfolio-title {
+.portfolio .button {
+    background-color: var(--background-color-grey);
     color: var(--color-black);
-    /* font-style: normal; */
+}
+
+.portfolio .button:hover,
+.portfolio .button:focus {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.portfolio .title {
+    color: var(--color-black);
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.portfolio-text {
-    /* font-style: normal; */
-    /* font-weight: 400; */
+.portfolio .text {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
 }
+
+
